@@ -1,6 +1,6 @@
 ### Cześć! 👋
 
-🌦️ ESP8266 Weather Station (OLED)
+🌦️ ESP8266 Weather Station (OLED) </br>
 Inteligentna stacja pogodowa oparta na module ESP8266, która pobiera dane w czasie rzeczywistym z serwisu OpenWeatherMap. 
 Projekt wyświetla aktualną temperaturę, wilgotność oraz krótki opis pogodowy dla Gdyni na wyświetlaczu OLED SSD1306.
 
