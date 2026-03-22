@@ -1,6 +1,6 @@
 ### Cześć! 👋
 
-🔐 Smart Safe System (ESP8266)
+🔐 Smart Safe System (ESP8266) </br>
 Interaktywny system kontroli dostępu do sejfu oparty na module ESP8266. 
 Urządzenie działa jako niezależny punkt dostępowy (SoftAP) i serwuje zabezpieczony panelem PIN interfejs webowy, 
 który pozwala na zdalne ryglowanie zamka oraz sterowanie oświetleniem.
