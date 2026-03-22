@@ -15,5 +15,7 @@ i wilgotności bezpośrednio pod adresem IP modułu.
 📱 Jak się połączyć?
 
 Połącz się z siecią WiFi o nazwie: Termometr_Prosty.
+
 Wpisz hasło: haslo123.
+
 W przeglądarce wpisz adres: 192.168.4.1.
