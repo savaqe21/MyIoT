@@ -1,6 +1,6 @@
 ### Cześć! 👋
 
-🌡️ Termometr Web (SoftAP + DHT11)
+🌡️ Termometr Web (SoftAP + DHT11) </br>
 Lokalna stacja pomiarowa oparta na module ESP8266 i czujniku DHT11. 
 Urządzenie tworzy własną sieć WiFi (Access Point), udostępniając responsywny panel webowy z aktualnymi odczytami temperatury
 i wilgotności bezpośrednio pod adresem IP modułu.
@@ -15,7 +15,5 @@ i wilgotności bezpośrednio pod adresem IP modułu.
 📱 Jak się połączyć?
 
 Połącz się z siecią WiFi o nazwie: Termometr_Prosty.
-
 Wpisz hasło: haslo123.
-
 W przeglądarce wpisz adres: 192.168.4.1.
