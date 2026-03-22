@@ -1,6 +1,6 @@
 ### Cześć! 👋
 
-🌐 Rozproszony System Pogodowy (ESP-to-ESP)
+🌐 Rozproszony System Pogodowy (ESP-to-ESP) </br>
 Zaawansowany projekt IoT realizujący bezprzewodową komunikację między dwoma modułami ESP8266 bez użycia zewnętrznego routera. 
 System dzieli się na stację pomiarową (Serwer) oraz zdalny terminal wyświetlający (Klient).
 
