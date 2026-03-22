@@ -1,4 +1,4 @@
-# Cześć! 👋
+### Cześć! 👋
 Zbiór projektów opartych na mikrokontrolerze ESP8266, realizujących zadania z zakresu inteligentnego domu, komunikacji bezprzewodowej oraz integracji urządzeń z bazami danych.
 
 Moje projekty ewoluowały przez trzy kluczowe etapy:
