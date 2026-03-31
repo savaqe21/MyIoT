@@ -1,52 +1,25 @@
-# 🛡️ IoT Smart Alarm System (ESP8266 + RFID + Ultrasonic)
+### Cześć! 👋
 
-Dwumodułowy, inteligentny system alarmowy oparty na mikrokontrolerach ESP8266, wykorzystujący komunikację bezprzewodową **ESP-NOW**.
-Projekt realizuje scenariusz ochrony pomieszczenia z autoryzacją dostępu za pomocą technologii RFID.
+🛡️ IoT Smart Alarm System: ESP8266 + RFID + Ultrasonic </br>
+Dwumodułowy, inteligentny system alarmowy oparty na bezprzewodowej komunikacji ESP-NOW. 
+Projekt realizuje kompletny scenariusz ochrony mienia: od detekcji intruza czujnikiem ultradźwiękowym, 
+przez autoryzację zbliżeniową RFID, aż po zaawansowaną logikę kar czasowych i powiadomień wizualnych.
 
-## 📋 Funkcje Systemu
-* **Detekcja bezkontaktowa**: Wykorzystanie czujnika ultradźwiękowego do monitorowania przestrzeni (zasięg 50 cm).
-* **Architektura rozproszona**: Podział na jednostkę sondującą (Strażnik) oraz jednostkę sterującą (Terminal).
-* **Bezprzewodowa komunikacja**: Natychmiastowa wymiana danych przez protokół ESP-NOW (nie wymaga routera WiFi).
-* **Autoryzacja RFID**: Rozbrajanie systemu za pomocą unikalnego UID karty/breloka.
-* **System kar czasowych**: Intruz ma 30 sekund na autoryzację. Każda próba użycia błędnej karty odejmuje 5 sekund od pozostałego czasu.
-* **Interfejs OLED**: Wyświetlanie statusu systemu, czasu do alarmu oraz komunikatów o błędach w czasie rzeczywistym.
+🏗️ Architektura Systemu
 
-## 🏗️ Architektura Sprzętowa
+- **Jednostka A (Strażnik)**: NodeMCU pełniący rolę sensora. Monitoruje przestrzeń (HC-SR04) i zarządza sygnalizacją dźwiękową (Buzzer).
+- **Jednostka B (Terminal)**: Główny węzeł sterujący. Obsługuje autoryzację użytkownika (RFID-RC522) oraz interfejs graficzny (OLED).
+- **Komunikacja (ESP-NOW)**: Bezpośrednia wymiana danych między jednostkami bez pośrednictwa routera WiFi, zapewniająca minimalne opóźnienia.
 
-### 1. Jednostka A: Strażnik (Sensor Node)
-* **Mikrokontroler**: ESP8266 (NodeMCU/LoLin)
-* **Czujnik**: HC-SR04 (Ultradźwiękowy miernik odległości)
-* **Sygnalizator**: Buzzer aktywny (Low Level Trigger)
+🚀 Kluczowe Funkcjonalności
 
-### 2. Jednostka B: Terminal (Control Node)
-* **Mikrokontroler**: ESP8266 (NodeMCU/LoLin)
-* **Czytnik**: RFID-RC522 (13.56 MHz)
-* **Wyświetlacz**: OLED 0.96" SSD1306 (I2C)
+- **Inteligentna Detekcja**: Monitorowanie strefy w zasięgu 50 cm z natychmiastowym przesyłaniem statusu do terminala.
+- **System Autoryzacji**: Rozbrajanie systemu za pomocą unikalnego UID karty/breloka z dynamicznym odliczaniem czasu (30s).
+- **Mechanizm Kar Czasowych**: Każda próba użycia nieuprawnionej karty skraca czas na rozbrojenie o 5 sekund, zwiększając bezpieczeństwo.
+- **Interfejs Real-time**: Wyświetlanie statusu uzbrojenia, pozostałego czasu oraz alertów o błędach bezpośrednio na ekranie OLED.
 
-## 🔧 Połączenia (Pinout)
+🛠️ Technologie
 
-### Terminal (ESP + RFID + OLED)
-| RFID RC522 | ESP8266 | OLED SSD1306 | ESP8266 |
-|------------|---------|--------------|---------|
-| SDA (SS)   | D8      | VCC          | 3V3     |
-| SCK        | D5      | GND          | GND     |
-| MOSI       | D7      | SCL          | D1      |
-| MISO       | D6      | SDA          | D2      |
-| RST        | D3      |              |         |
-| 3.3V       | 3V3     |              |         |
-
-### Strażnik (ESP + Ultrasonic + Buzzer)
-| Element    | Pin ESP |
-|------------|---------|
-| Trig       | D1      |
-| Echo       | D2      |
-| Buzzer I/O | D5      |
-| VCC (HC-SR04)| VIN (5V)|
-
-## 🚀 Logika Działania (Scenariusz)
-1.  **Czuwanie**: Strażnik mierzy odległość, Terminal wyświetla "SYSTEM UZBROJONY".
-2.  **Wykrycie**: Intruz przecina wiązkę (<50cm). Strażnik wysyła sygnał do Terminala i zaczyna pulsacyjnie pikać.
-3.  **Autoryzacja**: Terminal uruchamia odliczanie (30s). 
-    * **Poprawna karta**: System wraca do czuwania, buzzer milknie.
-    * **Błędna karta**: Skrócenie czasu o 5 sekund.
-4.  **Alarm**: Po upływie czasu lub wielokrotnych błędach, Terminal wysyła sygnał wymuszający ciągły alarm dźwiękowy.
+- **Języki**: C++ (Arduino). </br>
+- **Protokół**: ESP-NOW (Low-latency wireless). </br>
+- **Biblioteki**: SPI, MFRC522, Adafruit_SSD1306, ESP8266WiFi.
