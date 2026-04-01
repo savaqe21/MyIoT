@@ -26,5 +26,6 @@ aż po zwrotne sterowanie elementami wykonawczymi (LED).
 - Języki: C++ (Arduino), PHP 8.x, SQL. </br>
 - Baza danych: MariaDB (XAMPP/localhost). </br>
 - Biblioteki: ArduinoJson, Adafruit_SSD1306, DHT sensor library.
-![IMG_2645](https://github.com/user-attachments/assets/d5371219-982c-45ae-a21c-03168b5ab51f)
 
+| ![IMG_2645](https://github.com/user-attachments/assets/d5371219-982c-45ae-a21c-03168b5ab51f) |
+| :---: |
