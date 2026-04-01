@@ -14,3 +14,7 @@ Projekt wyświetla aktualną temperaturę, wilgotność oraz krótki opis pogodo
 
 Aby uruchomić projekt, należy uzupełnić własny apiKey z OpenWeatherMap oraz dane do domowej sieci WiFi w kodzie źródłowym. 
 Dane są odświeżane automatycznie co 60 sekund.
+
+
+![IMG_2642](https://github.com/user-attachments/assets/d63e5edb-3f75-457a-9d67-672c62d2c15c)
+
