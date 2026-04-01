@@ -21,6 +21,4 @@ który pozwala na zdalne ryglowanie zamka oraz sterowanie oświetleniem.
 | ![IMG_2649](https://github.com/user-attachments/assets/257acf58-eb05-41de-b9b8-8b3c37299a03) |
 | :---: |
 | ![IMG_2644](https://github.com/user-attachments/assets/f54fb18f-51b9-4eaa-9937-8d1597f86feb) |
-| :---: |
 | ![IMG_2641](https://github.com/user-attachments/assets/325c3038-40be-43fb-af9b-01ecdf8d98e7) |
-| :---: |
