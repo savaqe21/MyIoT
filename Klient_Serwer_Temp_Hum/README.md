@@ -18,4 +18,5 @@ i prezentuje wyniki (temperatura i wilgotność) na wyświetlaczu OLED SSD1306.
 - Sieć: Tryb SoftAP na serwerze, automatyczna rekonfiguracja WiFi na kliencie.
 - Hardware: 2x ESP8266, DHT11, OLED 128x64 I2C.
 
-![IMG_2646](https://github.com/user-attachments/assets/c81005f9-6dfd-4e7e-be07-ef6efee91c15)
+| ![IMG_2646](https://github.com/user-attachments/assets/c81005f9-6dfd-4e7e-be07-ef6efee91c15) |
+| :---: |
