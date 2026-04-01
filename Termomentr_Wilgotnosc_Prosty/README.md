@@ -20,6 +20,7 @@ Wpisz hasło: haslo123.
 
 W przeglądarce wpisz adres: 192.168.4.1.
 
-![IMG_2647](https://github.com/user-attachments/assets/0b51c293-9071-49e5-b42b-afb598d7c04d)
-![IMG_2643](https://github.com/user-attachments/assets/e538a740-0344-4a8c-909c-956f39d76761)
+| ![IMG_2647](https://github.com/user-attachments/assets/0b51c293-9071-49e5-b42b-afb598d7c04d) |
+| :---: |
+| ![IMG_2643](https://github.com/user-attachments/assets/e538a740-0344-4a8c-909c-956f39d76761) |
 
