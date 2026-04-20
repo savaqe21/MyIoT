@@ -24,8 +24,15 @@ przez autoryzację zbliżeniową RFID, aż po zaawansowaną logikę kar czasowyc
 - **Protokół**: ESP-NOW (Low-latency wireless). </br>
 - **Biblioteki**: SPI, MFRC522, Adafruit_SSD1306, ESP8266WiFi.
 
+<img src="https://github.com/user-attachments/assets/66d152da-6e6d-421f-a85a-246338302dc5" width="300">
+<img src="https://github.com/user-attachments/assets/86c73ce8-35c1-497b-aa5b-2d7e3e2ff92d" width="300">
+<img src="https://github.com/user-attachments/assets/3e426560-4164-4e1c-ac43-1e9d0d578462" width="300">
+<img src="https://github.com/user-attachments/assets/590961d1-7107-465b-bf87-c96dd6a24217" width="300">
+
+<!--
 | ![IMG_2666](https://github.com/user-attachments/assets/66d152da-6e6d-421f-a85a-246338302dc5) |
 | :---: |
 | ![IMG_2669](https://github.com/user-attachments/assets/86c73ce8-35c1-497b-aa5b-2d7e3e2ff92d) |
 | ![IMG_2668](https://github.com/user-attachments/assets/3e426560-4164-4e1c-ac43-1e9d0d578462) |
 | ![IMG_2667](https://github.com/user-attachments/assets/590961d1-7107-465b-bf87-c96dd6a24217) |
+-->
